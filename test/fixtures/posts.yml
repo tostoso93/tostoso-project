@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  haiku: MyText
+  ninja: MyString
+
+two:
+  haiku: MyText
+  ninja: MyString
