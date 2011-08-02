@@ -1,0 +1,38 @@
+body {
+	background:#cccccc; margin:0px;
+	/* ウインド内のスクロールを禁止にしておく
+		スクロールできると描画位置がずれるのでまずい。*/
+	overflow:hidden;
+}
+canvas#canvas1 {  background:#ffffff; }
+
+div#IDCanvasDiv {
+	position: absolute;
+	float: left;
+}
+
+div#IDSelectColorBox {
+	position: relative; 
+	background:#ffffff;
+	float: right;
+	padding:1em;
+	border: 1px solid #999999;
+	text-align:center;
+}
+
+div#IDCurrentColor {
+	width:60px; height:40px;
+	border:1px solid #999999;
+	background:#000000;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:0.2em;
+}
+
+table#IDColorTable {
+	margin:1em 0em;
+}
+table#IDColorTable td {
+	width:30px; height:30px;
+	border: 1px solid #999999;
+}

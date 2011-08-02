@@ -1,0 +1,11 @@
+<%= form_for(@book) do |f| %>
+	<div class="field">
+		<%= f.label :isbn %></br>
+		<%= f.text_field :isbn, {:size =>25 } %>
+		<%= f.password_field :isbn,
+		{ :size => 10, :maxlength => 15,  } %><br />
+	</div>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>

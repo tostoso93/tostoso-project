@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<%= form_for(@book) do |f| %>
+
+	パスワード<%= f.password_field :isbn,
+	{ :size => 10, :maxlength => 15,  } %><br />
+	メール<%= f.email_field :isbn,
+	{ :size => 10, :maxlength => 15 } %><br />
+	数値入力<%= f.number_field :isbn,
+	{ :size => 10, :maxlength => 15, :step => 10 } %><br />
+	範囲フィールド<%= f.range_field :isbn,
+	{ :size => 10, :maxlength => 15, :max => 100, :min => 0 } %><br />
+	範囲フィールド<%= f.url_field :isbn,
+	{ :size => 10, :maxlength => 15 } %><br />
+<% end %>
