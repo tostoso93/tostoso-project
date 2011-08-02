@@ -1,6 +1,6 @@
 
-var CanvasW = 450;
-var CanvasH = 350;
+var CanvasW = 1000;
+var CanvasH = 500;
 var mouseDown = false;
 
 var penX = 0;
