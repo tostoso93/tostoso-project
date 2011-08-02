@@ -11,7 +11,7 @@ var ctx;
 var currentColor = "#0000ff";
 
 /*
- * •`‰æ•”–å
+ * æç”»éƒ¨é–€
  */
 
 function draw() {
@@ -27,23 +27,23 @@ function draw() {
 }
 
 function clearCanvas(id){
-	println("clearCanvas");
+	//println("clearCanvas");
 	var canvas = document.getElementById(id);
 	var c = canvas.getContext('2d');
-	//ƒNƒŠƒA‚¾‚Æ”wŒi‚ª”’‚Å‚Í‚È‚¢‚È
+	//ã‚¯ãƒªã‚¢ã ã¨èƒŒæ™¯ãŒç™½ã§ã¯ãªã„ãª
 	//c.clearRect(0, 0, CanvasW, CanvasH);
 	c.fillStyle = "#ffffff";
 	c.fillRect(0, 0, CanvasW, CanvasH);
 }
 
 /*
- * ƒ}ƒEƒXƒCƒxƒ“ƒgˆ—•”–å
+ * ãƒã‚¦ã‚¹ã‚¤ãƒ™ãƒ³ãƒˆå‡¦ç†éƒ¨é–€
  */
 
 function onMouseMove(x, y){
 	penX = x;
 	penY = y;
-	//ƒ}ƒEƒXƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚Ä‚¢‚éê‡‚Í•`‰æ‚·‚é
+	//ãƒã‚¦ã‚¹ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ã„ã‚‹å ´åˆã¯æç”»ã™ã‚‹
 	if (mouseDown){
 		draw();
 	}
@@ -54,14 +54,14 @@ function onMouseDown(b){
 	mouseDown = b;
 	if (mouseDown){
 		//println("onMouseDown:"+b);
-		//ƒNƒŠƒbƒN‚µ‚½iƒhƒ‰ƒbƒO‚µ‚Ä‚¢‚È‚¢j‚¾‚¯‚Å‚à•`‰æ‚·‚éB
+		//ã‚¯ãƒªãƒƒã‚¯ã—ãŸï¼ˆãƒ‰ãƒ©ãƒƒã‚°ã—ã¦ã„ãªã„ï¼‰ã ã‘ã§ã‚‚æç”»ã™ã‚‹ã€‚
 		onMouseMove(penX, penY);
 	}
 	debug();
 }
 
 /*
- * F‘I‘ğ
+ * è‰²é¸æŠ
  */
 
 function tdClicked(td){
@@ -72,10 +72,10 @@ function tdClicked(td){
 
 
 /*
- * ƒfƒoƒbƒO
+ * ãƒ‡ãƒãƒƒã‚°
  */
 function debug(){
-	var s = penX +", "+ penY + " " + (mouseDown ? "‰Ÿ‚µ‚½" : "‰Ÿ‚µ‚Ä‚¢‚È‚¢");
+	var s = penX +", "+ penY + " " + (mouseDown ? "æŠ¼ã—ãŸ" : "æŠ¼ã—ã¦ã„ãªã„");
 	document.getElementById("mouse_state").innerHTML = s;
 }
 function println(s){

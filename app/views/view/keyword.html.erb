@@ -1,5 +1,5 @@
 <%= javascript_include_tag 'script.js' %>
-<%= stylesheet_link_tag 'style.js' %>
+<%= stylesheet_link_tag 'style.css' %>
 <%= form_tag({ :controller => 'keyword', :action => 'search'},
 	{ :id => 'fm', :class => 'search' }) do %>
 	保存ファイル名：→
@@ -12,4 +12,5 @@
 	onmouseout="onMouseDown(false)"
 	onmouseup="onMouseDown(false)"
 	onmousedown="onMouseDown(true)"></canvas><br/>
-<input type="button" value="クリア" onclick="clearCanvas('canvas1')"/><br/>
+<input type="button" value="クリアする" onclick="clearCanvas('canvas1')"/><br/>
+</div>
